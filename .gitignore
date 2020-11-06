@@ -6,3 +6,9 @@ npm-debug.log
 *.env
 *.dev
 .DS_Store
+
+# Heroku
+Procfile
+
+# Logs
+logs
