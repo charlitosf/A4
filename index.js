@@ -14,6 +14,7 @@ else
     interval = (86400 + hours * 3600 + minutes * 60 + seconds) * 1000
 
 let i = 1;
+console.log(`Requests starting every ${interval / 1000} seconds`)
 setInterval(() => {
     if (i < days)
         i++;
