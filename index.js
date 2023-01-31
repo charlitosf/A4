@@ -7,7 +7,7 @@ const hours = process.env.HOURS || 6;
 const days = process.env.DAYS || 0;
 
 const DAYS_MARGIN = parseInt(process.env.DAYS_MARGIN) || 3;
-const citaDays = [1] // Mon
+const citaDays = process.env.APPOINTMENT_DAYS.split(' ').map((day) => parseInt(day));
 
 const START_RIGHT_AWAY = process.env.START_RIGHT_AWAY == 'true';
 
